@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #1db954; /* Spotify green */
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.hero button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #1db954;
+  color: white;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #17a44c;
+}
+
+.music-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.music-section h2 {
+  margin-bottom: 40px;
+}
+
+.music-section iframe {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
