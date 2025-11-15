@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
-import { contact } from '../data/Mock';
+import React, { useState } from "react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
+import { contact } from "../data/Mock";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     setIsSubmitted(true);
-    
+
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     }, 3000);
   };
 
@@ -40,7 +40,8 @@ const Contact = () => {
               Hubungi Kami
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Kami siap membantu Anda dengan informasi lebih lanjut tentang TK Pembangunan
+              Kami siap membantu Anda dengan informasi lebih lanjut tentang TK
+              Pembangunan
             </p>
           </div>
         </div>
@@ -57,8 +58,9 @@ const Contact = () => {
                   Informasi Kontak
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Jangan ragu untuk menghubungi kami. Tim kami siap membantu Anda dengan 
-                  pertanyaan seputar pendaftaran, program pembelajaran, atau informasi lainnya.
+                  Jangan ragu untuk menghubungi kami. Tim kami siap membantu
+                  Anda dengan pertanyaan seputar pendaftaran, program
+                  pembelajaran, atau informasi lainnya.
                 </p>
               </div>
 
@@ -68,7 +70,9 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Alamat Sekolah</h4>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Alamat Sekolah
+                    </h4>
                     <p className="text-gray-600">{contact.address}</p>
                   </div>
                 </div>
@@ -78,7 +82,9 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-yellow-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Nomor Telepon</h4>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Nomor Telepon
+                    </h4>
                     <p className="text-gray-600">{contact.phone}</p>
                   </div>
                 </div>
@@ -98,7 +104,9 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-purple-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Jam Operasional</h4>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Jam Operasional
+                    </h4>
                     <div className="text-gray-600 text-sm space-y-1">
                       <p>Senin - Jumat: {contact.hours.weekdays}</p>
                       <p>Sabtu: {contact.hours.saturday}</p>
@@ -120,9 +128,12 @@ const Contact = () => {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="w-8 h-8 text-green-500" />
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-2">Pesan Terkirim!</h4>
+                  <h4 className="text-xl font-semibold text-gray-800 mb-2">
+                    Pesan Terkirim!
+                  </h4>
                   <p className="text-gray-600">
-                    Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda kembali.
+                    Terima kasih atas pesan Anda. Kami akan segera menghubungi
+                    Anda kembali.
                   </p>
                 </div>
               ) : (
@@ -208,7 +219,8 @@ const Contact = () => {
               Lokasi Sekolah
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Temukan lokasi TK Pembangunan dengan mudah menggunakan peta di bawah ini
+              Temukan lokasi TK Pembangunan dengan mudah menggunakan peta di
+              bawah ini
             </p>
           </div>
 
@@ -228,7 +240,9 @@ const Contact = () => {
 
           <div className="mt-8 text-center">
             <a
-              href={`https://maps.google.com/?q=${encodeURIComponent(contact.address)}`}
+              href={`https://maps.google.com/?q=${encodeURIComponent(
+                contact.address
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-8 py-4 rounded-2xl font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all duration-200"

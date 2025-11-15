@@ -1,9 +1,10 @@
 /* ============================= */
 /* Global Styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   background-color: #f9f9f9;
   color: #333;
@@ -22,7 +23,7 @@ a {
   align-items: center;
   padding: 20px 50px;
   background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -116,7 +117,7 @@ a {
 }
 
 .secondary-button:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .hero-image-placeholder img {
@@ -151,14 +152,14 @@ a {
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -209,13 +210,13 @@ a {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
 .news-card img {
-  width: 300px;   /* fix width */
-  height: 200px;  /* fix height */
+  width: 300px; /* fix width */
+  height: 200px; /* fix height */
   object-fit: cover;
   display: block;
 }
@@ -307,7 +308,8 @@ a {
 }
 
 @media (max-width: 500px) {
-  .card, .news-card {
+  .card,
+  .news-card {
     width: 100%;
     min-width: 100%;
     max-width: 100%;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
-import { testimonials } from '../data/Mock';
+import React from "react";
+import { Star, Quote } from "lucide-react";
+import { testimonials } from "../data/Mock";
 
 const TestimonialsSection = () => {
   return (
@@ -11,7 +11,8 @@ const TestimonialsSection = () => {
             Testimoni Orang Tua
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Dengarkan cerita dari para orang tua tentang pengalaman anak-anak mereka di TK Pembangunan
+            Dengarkan cerita dari para orang tua tentang pengalaman anak-anak
+            mereka di TK Pembangunan
           </p>
         </div>
 
@@ -31,7 +32,10 @@ const TestimonialsSection = () => {
               {/* Rating */}
               <div className="flex justify-center space-x-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 text-yellow-400 fill-current"
+                  />
                 ))}
               </div>
 
@@ -42,8 +46,12 @@ const TestimonialsSection = () => {
 
               {/* Author Info */}
               <div className="text-center">
-                <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                <p className="text-sm text-blue-600">Orang tua dari {testimonial.child}</p>
+                <h4 className="font-semibold text-gray-800">
+                  {testimonial.name}
+                </h4>
+                <p className="text-sm text-blue-600">
+                  Orang tua dari {testimonial.child}
+                </p>
               </div>
             </div>
           ))}

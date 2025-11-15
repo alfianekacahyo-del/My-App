@@ -1,6 +1,6 @@
-import React from 'react';
-import { MapPin, Phone, Mail, Clock, Heart } from 'lucide-react';
-import { contact } from '../data/Mock';
+import React from "react";
+import { MapPin, Phone, Mail, Clock, Heart } from "lucide-react";
+import { contact } from "../data/Mock";
 
 const Footer = () => {
   return (
@@ -14,13 +14,18 @@ const Footer = () => {
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-800">TK PEMBANGUNAN</h3>
-                <p className="text-sm text-blue-600">Membangun Generasi Cerdas</p>
+                <h3 className="text-lg font-bold text-gray-800">
+                  TK PEMBANGUNAN
+                </h3>
+                <p className="text-sm text-blue-600">
+                  Membangun Generasi Cerdas
+                </p>
               </div>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Lembaga pendidikan anak usia dini yang berkomitmen mengembangkan potensi 
-              setiap anak dengan pendekatan pembelajaran yang menyenangkan dan berkarakter.
+              Lembaga pendidikan anak usia dini yang berkomitmen mengembangkan
+              potensi setiap anak dengan pendekatan pembelajaran yang
+              menyenangkan dan berkarakter.
             </p>
           </div>
 
@@ -45,14 +50,20 @@ const Footer = () => {
 
           {/* Hours */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-800">Jam Operasional</h4>
+            <h4 className="text-lg font-semibold text-gray-800">
+              Jam Operasional
+            </h4>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <div className="text-sm">
-                  <p className="text-gray-600">Senin - Jumat: {contact.hours.weekdays}</p>
-                  <p className="text-gray-600">Sabtu: {contact.hours.saturday}</p>
-                  <p className="text-gray-600">Minggu: {contact.hours.sunday}</p>
+                  <p className="text-gray-600">
+                    Senin - Jumat: {contact.hours.weekdays}
+                  </p>
+                  <p className="text-gray-600">Sabtu: {contact.hours.sunday}</p>
+                  <p className="text-gray-600">
+                    Minggu: {contact.hours.sunday}
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,9 +74,10 @@ const Footer = () => {
         <div className="mt-8 pt-6 border-t border-gray-200">
           <div className="text-center">
             <p className="text-sm text-gray-500">
-              © 2024 TK PEMBANGUNAN. All rights reserved. 
+              © 2025 TK PEMBANGUNAN. All rights reserved.
               <span className="mx-2">|</span>
-              Made with <Heart className="w-4 h-4 text-red-400 inline mx-1" /> for our children
+              Made with <Heart className="w-4 h-4 text-red-400 inline mx-1" />{" "}
+              for our children
             </p>
           </div>
         </div>

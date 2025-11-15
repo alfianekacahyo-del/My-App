@@ -1,9 +1,9 @@
-import React from 'react';
-import Hero from '../components/Hero';
-import TestimonialsSection from '../components/TestimonialsSection';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Target, Heart, Users, BookOpen } from 'lucide-react';
-import { schoolInfo } from '../data/Mock';
+import React from "react";
+import Hero from "../components/Hero";
+import TestimonialsSection from "../components/TestimonialsSection";
+import { Link } from "react-router-dom";
+import { ArrowRight, Target, Heart, Users, BookOpen } from "lucide-react";
+import { schoolInfo } from "../data/Mock";
 
 const Home = () => {
   return (
@@ -32,8 +32,13 @@ const Home = () => {
                     <Target className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Pembelajaran Berkualitas</h4>
-                    <p className="text-gray-600 text-sm">Metode pembelajaran yang disesuaikan dengan perkembangan anak usia dini</p>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Pembelajaran Berkualitas
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Metode pembelajaran yang disesuaikan dengan perkembangan
+                      anak usia dini
+                    </p>
                   </div>
                 </div>
 
@@ -42,8 +47,13 @@ const Home = () => {
                     <Heart className="w-6 h-6 text-yellow-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Lingkungan Ramah Anak</h4>
-                    <p className="text-gray-600 text-sm">Fasilitas yang aman dan nyaman untuk mendukung tumbuh kembang anak</p>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Lingkungan Ramah Anak
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Fasilitas yang aman dan nyaman untuk mendukung tumbuh
+                      kembang anak
+                    </p>
                   </div>
                 </div>
 
@@ -52,8 +62,13 @@ const Home = () => {
                     <Users className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-1">Guru Berpengalaman</h4>
-                    <p className="text-gray-600 text-sm">Tim pengajar yang profesional dan berpengalaman dalam pendidikan anak</p>
+                    <h4 className="font-semibold text-gray-800 mb-1">
+                      Guru Berpengalaman
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Tim pengajar yang profesional dan berpengalaman dalam
+                      pendidikan anak
+                    </p>
                   </div>
                 </div>
               </div>
@@ -90,7 +105,8 @@ const Home = () => {
               Program Unggulan
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Berbagai program pembelajaran yang dirancang khusus untuk mengembangkan potensi anak
+              Berbagai program pembelajaran yang dirancang khusus untuk
+              mengembangkan potensi anak
             </p>
           </div>
 
@@ -99,33 +115,47 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Program PAUD</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Program PAUD
+              </h3>
               <p className="text-gray-600 mb-4">
-                Program pembelajaran untuk anak usia 3-4 tahun dengan fokus pada pengembangan motorik dan sosial
+                Program pembelajaran untuk anak usia 3-4 tahun dengan fokus pada
+                pengembangan motorik dan sosial
               </p>
-              <div className="text-sm text-blue-600 font-medium">Usia 3-4 tahun • 3 jam/hari</div>
+              <div className="text-sm text-blue-600 font-medium">
+                Usia 3-4 tahun • 3 jam/hari
+              </div>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Kelas Kreatif</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Kelas Kreatif
+              </h3>
               <p className="text-gray-600 mb-4">
-                Program pengembangan kreativitas melalui seni, musik, dan eksplorasi
+                Program pengembangan kreativitas melalui seni, musik, dan
+                eksplorasi
               </p>
-              <div className="text-sm text-blue-600 font-medium">Usia 4-5 tahun • 4 jam/hari</div>
+              <div className="text-sm text-blue-600 font-medium">
+                Usia 4-5 tahun • 4 jam/hari
+              </div>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Seni & Musik</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Seni & Musik
+              </h3>
               <p className="text-gray-600 mb-4">
                 Program khusus untuk mengembangkan bakat seni dan musik anak
               </p>
-              <div className="text-sm text-blue-600 font-medium">Usia 3-6 tahun • 2 jam/hari</div>
+              <div className="text-sm text-blue-600 font-medium">
+                Usia 3-6 tahun • 2 jam/hari
+              </div>
             </div>
           </div>
 

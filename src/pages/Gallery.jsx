@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { X, ZoomIn, Image as ImageIcon } from 'lucide-react';
-import { gallery } from '../data/Mock';
+import React, { useState } from "react";
+import { X, ZoomIn, Image as ImageIcon } from "lucide-react";
+import { gallery } from "../data/Mock";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -23,7 +23,8 @@ const Gallery = () => {
               Galeri Foto
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Momen-momen berharga dalam kegiatan pembelajaran dan bermain di TK Pembangunan
+              Momen-momen berharga dalam kegiatan pembelajaran dan bermain di TK
+              Pembangunan
             </p>
           </div>
         </div>
@@ -40,7 +41,7 @@ const Gallery = () => {
               <div className="text-3xl font-bold text-gray-800">200+</div>
               <div className="text-gray-600">Foto Kegiatan</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <ImageIcon className="w-8 h-8 text-white" />
@@ -48,7 +49,7 @@ const Gallery = () => {
               <div className="text-3xl font-bold text-gray-800">50+</div>
               <div className="text-gray-600">Event Tahunan</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <ImageIcon className="w-8 h-8 text-white" />
@@ -56,7 +57,7 @@ const Gallery = () => {
               <div className="text-3xl font-bold text-gray-800">15</div>
               <div className="text-gray-600">Tahun Sejarah</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <ImageIcon className="w-8 h-8 text-white" />
@@ -76,7 +77,8 @@ const Gallery = () => {
               Koleksi Foto Kegiatan
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Lihat berbagai kegiatan seru dan pembelajaran yang dilakukan siswa-siswi TK Pembangunan
+              Lihat berbagai kegiatan seru dan pembelajaran yang dilakukan
+              siswa-siswi TK Pembangunan
             </p>
           </div>
 
@@ -93,7 +95,7 @@ const Gallery = () => {
                     alt={item.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -103,7 +105,7 @@ const Gallery = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800 text-center">
                     {item.title}
@@ -125,13 +127,13 @@ const Gallery = () => {
             >
               <X className="w-6 h-6" />
             </button>
-            
+
             <img
               src={selectedImage.image}
               alt={selectedImage.title}
               className="max-w-full max-h-[80vh] object-contain rounded-lg"
             />
-            
+
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
               <h3 className="text-xl font-semibold text-white text-center">
                 {selectedImage.title}
@@ -150,7 +152,8 @@ const Gallery = () => {
                 Ingin Melihat Langsung?
               </h2>
               <p className="text-xl text-white opacity-90 max-w-2xl mx-auto">
-                Kunjungi TK Pembangunan dan rasakan langsung atmosfer pembelajaran yang menyenangkan
+                Kunjungi TK Pembangunan dan rasakan langsung atmosfer
+                pembelajaran yang menyenangkan
               </p>
               <button className="bg-white text-blue-500 font-semibold px-8 py-4 rounded-2xl hover:bg-gray-100 transition-colors transform hover:scale-105">
                 Jadwalkan Kunjungan
